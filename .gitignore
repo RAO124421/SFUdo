@@ -1,0 +1,13 @@
+build/
+Test/cmp/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.exe
+*.dll
+*.o
+*.obj
+.env
+.env.*
+!.env.example

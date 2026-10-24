@@ -1,0 +1,43 @@
+cmake_minimum_required(VERSION 3.16)
+project(SFUdo)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_AUTOMOC ON)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
+
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Boost REQUIRED COMPONENTS beast)
+
+qt_add_executable(SFUdo
+    main.cpp
+    # window/mainwindow.cpp
+    window/loginwindow.cpp
+    window/onboard.cpp
+    components/header.cpp
+    components/onNetwrok.cpp
+    components/onServer.cpp
+    components/onSystem.cpp
+    components/OnRoomList.cpp
+    components/RamUsageWidget.cpp
+    components/item/roomitem.cpp
+    components/TopProfile.cpp
+    core/eventqueue.cpp
+    SSsokcet/signaling.cpp
+    core/sfuconnections.cpp
+    resources/resources.qrc
+
+)
+
+
+target_link_libraries(
+    SFUdo
+    PRIVATE
+    Qt6::Widgets
+    dwmapi
+    Boost::beast
+    ws2_32
+)

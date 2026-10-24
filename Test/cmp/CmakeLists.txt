@@ -1,0 +1,52 @@
+cmake_minimum_required(VERSION 3.16)
+project(cmp)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_AUTOMOC ON)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
+
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Boost REQUIRED COMPONENTS beast)
+find_package(Qt6 REQUIRED COMPONENTS MultimediaWidgets)
+
+qt_add_executable(
+    cmp
+    main.cpp
+    mainwindow.cpp
+    cameraworker.cpp
+    H264Encoder.cpp
+    sfu.cpp
+    
+
+)
+target_include_directories(
+    cmp PRIVATE
+    D:/Bashdot/projects/dot3/server/v1/header/vcpkg/installed/x64-mingw-dynamic/include
+)
+
+target_link_directories(
+    cmp PRIVATE
+    D:/Bashdot/projects/dot3/server/v1/header/vcpkg/installed/x64-mingw-dynamic/lib
+)
+
+target_link_libraries(
+    cmp
+    PRIVATE
+    Qt6::Widgets
+    dwmapi
+    Boost::beast
+    ws2_32
+    Qt6::MultimediaWidgets
+    openh264
+
+    mf
+    mfplat
+    mfreadwrite
+    mfuuid
+    ole32
+    strmiids
+)

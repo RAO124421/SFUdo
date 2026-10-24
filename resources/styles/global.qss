@@ -1,0 +1,252 @@
+#mainwindow {
+    background-color: #3e4345;
+    color: white;
+    font-family: Segoe UI;
+}
+
+#onboard {
+    background-color: #3e4345;
+    color: white;
+    font-family: Segoe UI;
+}
+/* #header {
+    /* background-color: #ddd6d6; */
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+/* } */ 
+#header-logo{
+     margin-top: 5px;
+     margin-bottom: 5px;
+     margin-left: 5px;
+}
+#header-logo-title{
+    font-family: "Inter";
+    /* font-weight: bold;  */
+    font-size: 20px;
+    color: #e0e2e3;
+    margin: 5px;
+
+}
+#minBtn,
+#maxBtn,
+#closeBtn {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#minBtn:hover,
+#maxBtn:hover {
+    background-color: rgba(255, 255, 255, 40);
+}
+
+#minBtn:pressed,
+#maxBtn:pressed {
+    background-color: rgba(255, 255, 255, 70);
+}
+
+#closeBtn:hover {
+    background-color: #e81123;
+}
+
+#closeBtn:pressed {
+    background-color: #c50f1f;
+}
+/* Onboarding body  */
+/* #onboard-body{
+    /* background-color: white; */
+    /* padding: 5px; */
+/* }  */
+#onnetwrok{
+    background-color: transparent;
+}
+#onsystem{
+background-color: transparent;
+}
+
+#onserver{
+    background-color: transparent;
+}
+
+QLabel {
+    background: transparent;
+}
+
+#connectbtn{
+    padding: 5px;
+    margin: 10px;
+    color: aqua;
+    background-color: blue;
+}
+#statustxt{
+    font-size: 12px;
+
+}
+
+
+/* room list */
+
+#room-list{
+    border: none;
+    outline: none;
+    margin: 5px;
+    background:transparent;
+
+}
+#room-item{
+    margin: 5px;
+    background-color: #5e6366;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+#room-item-desc{
+    font-family: "Inter";
+    /* font-weight: bold;  */
+    font-size: 18px;
+    color: #e0e2e3;
+}
+#room-item-startbtn{
+    height: 20px;
+    font-family: "Inter";
+    font-weight: bold; 
+    padding: 10px;
+}
+#room-item-title{
+    font-family: "Inter";
+    font-weight: bold; 
+    font-size: 24px;
+    color: #e0e2e3;
+}
+#room-item-status-running{
+    font-family: "Inter";
+    font-weight: bold;
+    color:#e0e2e3 ;
+}
+#room-item-status-started{
+    font-family: "Inter";
+    font-weight: bold;
+    color:#17d40a ;
+}
+#room-item-status-end{
+    font-family: "Inter";
+    font-weight: bold;
+    color:#c60d0d ;
+}
+
+
+
+
+/* //on System */
+#onsystem-cpuname{
+    text-align: center;
+    font-family: "Inter";
+    font-weight: bold; 
+    font-size: 12px;
+    color: #e0e2e3;
+
+}
+#cpu-data{
+    font-family: "Inter";
+    font-weight: bold; 
+    font-size: 12px;
+    color: #e0e2e3;
+}
+#cpu-temp-holder{
+    font-family: "Inter";
+    font-weight: bold; 
+    font-size: 12px;
+    color: #2a9924;
+}
+#cpu-valu{
+    font-family: "Inter";
+    font-size: 12px;
+    color: #e0e2e3;
+    text-align: end;
+    background-color: #313537;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#cpuWidget{
+    
+    /* border: 4px solid #353535;
+    border-radius: 4px; */
+    /* margin: 5px; */
+    /* background-color: #5e6366; */
+    border-radius: 5px;
+}
+#ramWidget{
+    margin: 5px;
+    /* background-color: #5e6366; */
+    border-radius: 5px;
+}
+
+
+
+
+/* On Network */
+
+#onNetwork-ip{
+    font-family: "Inter";
+    font-weight: bold; 
+    font-size: 20px;
+    color: #afcf72;
+}
+
+
+/* on signlaing */
+#onServer-title{
+    font-family: "Inter";
+    font-weight: bold; 
+    font-size: 14px;
+    color: #e0e2e3;
+}
+
+/* profile */
+
+#TopProfile {
+    background-color: transparent;
+    /* border: 1px solid #343b48; */
+    /* border-radius: 8px; */
+}
+
+#TopProfileCircle {
+    background-color: #515f6f;
+    color: white;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#TopProfileName {
+    font-family: "Inter";
+    color: #e0e2e3;
+    font-size: 12px;
+    font-weight: 600;
+   
+}
+
+#TopProfileArrow {
+    background: transparent;
+    
+    border: none;
+}
+
+
+/* header  */
+#header-stop-btn{
+    height: 20px;
+    font-family: "Inter";
+    font-weight: bold; 
+    background-color: rgb(200, 84, 84);
+    color: white;
+
+}
+#copyright-txt{
+    font-family: "Inter";
+    font-size: medium;    
+    color: rgba(197, 197, 197, 0.603);
+}
